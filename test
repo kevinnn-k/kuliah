@@ -1,0 +1,21 @@
+# def backtrack(num):
+#     if num is ganjil:
+#         backtrack(num)
+#     if num is genap:
+#         backtrack(num)
+
+class BinaryTree:
+    def __init__(self, data, left, right):
+        self.data = data
+        self.left = left
+        self.right = right
+
+def preOrderTraversal(tree):
+        print(f"{tree.data} | ", end="")
+
+        if tree.left != None:
+            preOrderTraversal(tree.left)
+
+        if tree.right != None:
+            preOrderTraversal(tree.right)  
+            
